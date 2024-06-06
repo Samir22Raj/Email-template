@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			*,
+			::before,
+			::after {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: "Poppins", sans-serif;
+				font-style: normal;
+			}
+			p {
+				margin: 0;
+				margin-bottom: 12px;
+			}
+			ul {
+				color: #000;
+				text-align: center;
+				font-size: 8px;
+				font-weight: 500;
+				line-height: 12px;
+				list-style-position: inside;
+				padding: 0;
+			}
+			figure {
+				margin: 0;
+			}
+			h1,
+			.h1 {
+				color: #fff;
+				font-size: 46px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 30px;
+				margin: 0;
+			}
+			h2,
+			.h2 {
+				color: #000;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				margin: 0;
+			}
+			h3,
+			.h3 {
+				color: #042c54;
+				font-family: "Poppins", sans-serif;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 20px;
+			}
+			h4,
+			.h4 {
+				color: #000;
+				text-align: center;
+				font-family: "Poppins", sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 21px;
+			}
+			.pad {
+				padding: 30px;
+			}
+			.btn {
+				text-align: center;
+				background-color: #37b34a;
+				color: #fff;
+				font-family: "Roboto";
+				font-size: 18px;
+				font-weight: 500;
+				line-height: normal;
+				text-decoration: none;
+				padding: 12px;
+			}
+
+			/*Prices section classes*/
+			.prices-topics > div + div {
+				margin-top: 16px;
+			}
+			.prices-to {
+				color: #fff;
+				padding: 12px;
+				text-align: center;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 24px;
+				background: #042c54;
+				border-radius: 4px;
+				border: 1px solid #fff;
+				box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.16);
+			}
+			.prices-to > div > p {
+				margin-bottom: 0;
+			}
+			.prices {
+				font-size: 20px;
+				line-height: 30px;
+			}
+			.pricing {
+				color: #000;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 30px;
+			}
+
+			/*Getting started section classes*/
+			.getting-started > tbody > tr > td {
+				padding-bottom: 30px;
+				height: 81px;
+			}
+			.getting-started > tbody > tr > td > div > p:first-child {
+				margin-bottom: 8px;
+			}
+			.getting-started > tbody > tr:nth-child(even) > td:first-child {
+				width: 96px;
+				vertical-align: center;
+				background-image: url("Assets/serial_1.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.getting-started
+				> tbody
+				> tr:nth-child(odd):not(:first-child)
+				> td:last-child {
+				width: 96px;
+				vertical-align: center;
+				background-image: url("Assets/serial_2.png");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.getting-started > tbody > tr:last-child > td:first-child {
+				background: none;
+			}
+
+      /*discount span*/
+      #discount{
+        font-weight: 300;
+        position: relative;
+      }
+      #discount::before{
+        content: url(Assets/Vector\ 1.svg);
+        object-fit: cover;
+        position: absolute;
+      }
+		</style>
+	</head>
+	<body style="max-width: 605px; margin: 0 auto">
+		<div id="email" style="width: 605px">
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				class="pad"
+        style="padding: 25px;"
+			>
+				<tr>
+					<td style="padding: 25px">
+						<figure style="display: flex; justify-content: center">
+							<img
+								src="Assets/Logo.png"
+								alt="Header logo"
+								width="130"
+								height="70"
+								loading="lazy"
+							/>
+						</figure>
+					</td>
+				</tr>
+			</table>
+			<!--Header Section-->
+
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				style="
+					background-image: url(Assets/Hero_bg.png);
+					background-size: cover;
+				"
+			>
+				<tr>
+					<td style="width: 100%">
+						<div
+							style="
+								max-width: 417px;
+								height: 100%;
+								color: #fff;
+								background: linear-gradient(
+									90deg,
+									#042c54 0%,
+									rgba(4, 44, 84, 0.6) 41.5%,
+									rgba(4, 44, 84, 0) 100%
+								);
+							"
+						>
+							<div class="pad">
+								<h1>
+									First Case
+									<p
+										style="
+											font-family: 'Poppins';
+											font-size: 88px;
+											font-weight: 800;
+											letter-spacing: 8.8px;
+                      line-height: 88px;
+                      margin-bottom: 0;
+										"
+									>
+										FREE<span style="font-size: 32px; vertical-align: text-top; letter-spacing: initial;"
+											>**</span
+										>
+									</p>
+								</h1>
+								<p style="font-size: 20px; margin-bottom: 10px">
+									Shipping Year-Round Prices Up to 5-Year Warranty
+								</p>
+								<p
+									style="
+										border: rgba(255, 255, 255, 0.5);
+										border-width: 1px;
+										border-style: dashed;
+										background-color: rgba(56, 60, 110, 0.4);
+										padding: 8px 10px;
+										font-size: 18px;
+										margin-bottom: 30px;
+									"
+								>
+									Receive $1000 of FREE* lab work
+								</p>
+								<a href="" class="btn" style="padding: 12px 28px">
+									Register Today
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<!--Hero Section-->
+
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				class="pad"
+        style="padding: 60px 30px;"
+			>
+				<tr>
+					<td>
+						<div>
+							<p
+								style="
+									color: #000;
+									text-align: center;
+									font-size: 15px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 29px;
+									margin-bottom: 34px;
+								"
+							>
+								At Next Dental Lab, we pride ourselves in using cutting-edge
+								technology to make sure that our clients are always saving and
+								satisfied.  We optimize our partnerships with the industry’s
+								leading brands to ensure the highest quality dental
+								restorations.  We remain committed to high-quality products so
+								that your patients can enjoy the dual benefit of superior
+								comfort along with the longevity of their dental restorations.
+							</p>
+							<div style="text-align: center;">
+								<a href="" class="btn" style="padding: 12px 42px">
+									Learn More
+								</a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<!--Learn More Section-->
+
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				style="
+					background-color: #f6f6f6;
+					border-spacing: 15px;
+					padding-top: 15px;
+				"
+				class="pad"
+			>
+				<tr>
+					<td colspan="3">
+						<div style="padding-bottom: 15px">
+							<h2>Our Products</h2>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td
+						style="
+							padding: 5px;
+							padding-bottom: 16px;
+							background-color: #fff;
+							max-width: 170px;
+						"
+					>
+						<figure style="height: 96px; margin-bottom: 4px">
+							<img
+								src="Assets/crown_n_bridge_.png"
+								alt="Crown and Bridge"
+								width="512"
+								height="288"
+								loading="lazy"
+								style="
+									width: 100%;
+									height: 100%;
+									text-align: center;
+									max-height: 96px;
+									object-fit: contain;
+								"
+							/>
+						</figure>
+						<div>
+							<p class="h4" style="margin-bottom: 4px">Crown & Bridge*</p>
+							<p
+								style="
+									color: #000;
+									text-align: center;
+									font-size: 8px;
+									font-weight: 400;
+									line-height: 12px;
+									margin-bottom: 20px;
+								"
+							>
+								All-Ceramic, PFM, Full-Cast Diagnostic Wax-Ups, Temporary PMMA
+							</p>
+							<ul>
+								<li>Up to 5 Year Warranty</li>
+								<li>Multiple Tiers of Production</li>
+								<li>8 Business Days Turnaround Time*</li>
+							</ul>
+						</div>
+					</td>
+					<td
+						style="
+							padding: 5px;
+							padding-bottom: 16px;
+							background-color: #fff;
+							max-width: 170px;
+						"
+					>
+						<figure style="height: 96px; margin-bottom: 4px">
+							<img
+								src="Assets/removables.png"
+								alt="Removeables"
+								width="532"
+								height="438"
+								loading="lazy"
+								style="
+									width: 100%;
+									height: 100%;
+									text-align: center;
+									max-height: 96px;
+									object-fit: contain;
+								"
+							/>
+						</figure>
+						<div>
+							<p class="h4" style="margin-bottom: 4px">Removeables</p>
+							<p
+								style="
+									color: #000;
+									text-align: center;
+									font-size: 8px;
+									font-weight: 400;
+									line-height: 12px;
+									margin-bottom: 20px;
+								"
+							>
+								Dentures, Acrylic Partials, Metal Framework, Nightguards,
+								Orthodontic Appliances
+							</p>
+							<ul>
+								<li>Up to 5 Year Warranty</li>
+								<li>Multiple Tiers of Production</li>
+								<li>8 Business Days Turnaround Time*</li>
+							</ul>
+						</div>
+					</td>
+					<td
+						style="
+							padding: 5px;
+							padding-bottom: 16px;
+							background-color: #fff;
+							max-width: 170px;
+						"
+					>
+						<figure style="height: 96px; margin-bottom: 4px">
+							<img
+								src="Assets/dental _implants.png"
+								alt="Ddental Implants"
+								width="220"
+								height="260"
+								loading="lazy"
+								style="
+									width: 100%;
+									height: 100%;
+									text-align: center;
+									max-height: 96px;
+									object-fit: contain;
+								"
+							/>
+						</figure>
+						<div>
+							<p class="h4" style="margin-bottom: 4px">Dental Implants</p>
+							<p
+								style="
+									color: #000;
+									text-align: center;
+									font-size: 8px;
+									font-weight: 400;
+									line-height: 12px;
+									margin-bottom: 20px;
+								"
+							>
+								Cemented and Screw-Retained Implants Custom Abutments
+							</p>
+							<ul>
+								<li>Up to 5 Year Warranty</li>
+								<li>Multiple Tiers of Production</li>
+								<li>8 Business Days Turnaround Time*</li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<!--Product Sesction-->
+
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				class="pad"
+			>
+				<tr>
+					<td>
+						<div class="prices-topics">
+							<div>
+								<p class="pricing" style="margin-bottom: 4px">Free Shipping*</p>
+								<p class="h4" style="text-align: left">(Round Trip)</p>
+							</div>
+							<div>
+								<p class="pricing" style="margin-bottom: 4px">
+									Year Round Prices
+								</p>
+								<p class="h4" style="text-align: left">(No Minimum)</p>
+							</div>
+							<div>
+								<p class="pricing" style="margin-bottom: 4px">
+									Up to 5 Year Warranty
+								</p>
+								<p class="h4" style="text-align: left">(Crown & Bridge)</p>
+							</div>
+						</div>
+					</td>
+					<td style="width: 58%; vertical-align: top">
+						<table
+							role="presentation"
+							border="0"
+							cellspacing="0"
+							width="100%"
+							style="border-spacing: 16px"
+						>
+							<tr>
+								<td class="prices-to" style="width: 50%">
+									<div>
+										<p>PFM</p>
+										<p class="prices">$28</p>
+									</div>
+								</td>
+								<td class="prices-to" style="width: 50%">
+									<div>
+										<p>Zirconia</p>
+										<p class="prices">$37</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="prices-to" style="width: 50%">
+									<div>
+										<p>Emax</p>
+										<p class="prices">$45</p>
+									</div>
+								</td>
+								<td class="prices-to" style="width: 50%">
+									<div>
+										<p>Full Dentures</p>
+										<p class="prices">$37</p>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div style="text-align: center; margin-top: 40px">
+							<a href="" class="btn" style="padding: 12px 20px">
+                Request Full Price List</a
+							>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<!--Prices Section-->
+
+			<table
+				role="presentation"
+				border="0"
+				cellspacing="0"
+				width="100%"
+				style="background-color: #f6f6f6"
+				class="pad getting-started"
+			>
+				<tr>
+					<td colspan="3">
+						<div>
+							<h2>How To Get Started</h2>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p
+							style="
+								color: #fff;
+								font-size: 30px;
+								font-weight: 600;
+								line-height: 45px;
+								text-align: center;
+								vertical-align: middle;
+							"
+						>
+							1
+						</p>
+					</td>
+					<td>
+						<div style="padding: 6px 24px">
+							<p class="h3">Register For An Account</p>
+							<p
+								style="
+									font-size: 14px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 20px;
+								"
+							>
+								Click register and sign up your practice to start sending cases
+								today.
+							</p>
+						</div>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div style="padding: 6px 24px; text-align: right">
+							<p class="h3">Download Shipping Labels & RX Forms</p>
+							<p
+								style="
+									font-size: 14px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 20px;
+								"
+							>
+								Use your account number to print shipping labels and RX forms
+								right from our website.
+							</p>
+						</div>
+					</td>
+					<td>
+						<p
+							style="
+								color: #fff;
+								font-size: 30px;
+								font-weight: 600;
+								line-height: 45px;
+								text-align: center;
+								vertical-align: middle;
+							"
+						>
+							2
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p
+							style="
+								color: #fff;
+								font-size: 30px;
+								font-weight: 600;
+								line-height: 45px;
+								text-align: center;
+								vertical-align: middle;
+							"
+						>
+							3
+						</p>
+					</td>
+					<td colspan="2">
+						<div style="padding: 6px 24px">
+							<p class="h3">Send And Track Cases</p>
+							<p
+								style="
+									font-size: 14px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 20px;
+								"
+							>
+								Send your physical and digital impressions.
+							</p>
+						</div>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<div style="padding: 6px 24px; text-align: right">
+							<p class="h3">Save Money</p>
+							<p
+								style="
+									font-size: 14px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 20px;
+								"
+							>
+								We help save our dentists more than 50% on their dental lab
+								expenses.
+							</p>
+						</div>
+					</td>
+					<td>
+						<p
+							style="
+								color: #fff;
+								font-size: 30px;
+								font-weight: 600;
+								line-height: 45px;
+								text-align: center;
+								vertical-align: middle;
+							"
+						>
+							4
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<div style="text-align: center; margin-top: 10px">
+							<a href="" class="btn" style="padding: 12px 32px">Contact Us</a>
+						</div>
+					</td>
+				</tr>
+			</table>
+      <!--How-to Section-->
+
+			<table role="presentation" border="0" cellspacing="0" width="100%" class="pad" style="border-spacing: 16px;">
+				<tr>
+					<td>
+            <p style="margin-bottom: 0;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;">
+              **Only for Townies, <span id="discount">$50</span> $100 towards your first case(s). Register today and select "DentalTown" when asked how you heard about us.</td>
+            </p>
+				</tr>
+        <tr>
+          <td>
+            <p style="margin-bottom: 0;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;">*$1000 credit with Next Dental Lab when you purchase an intraoral scanner with iScanDental.com.</p>
+          </td>
+        </tr>
+			</table>
+      <!--Discount offer-->
+
+      <table role="presentation" border="0" cellspacing="0" width="100%" class="pad" style="background-color: #042C54; color: #FFF;">
+				<tr>
+					<td>
+            <figure style="text-align: center;">
+              <img src="Assets/footer-logo.svg" alt="Footer Logo" width="71" height="37" loading="lazy">
+            </figure>
+          </td>
+				</tr>
+        <tr>
+          <td>
+            <p style="font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            margin-top: 20px;
+            margin-bottom: 9px;
+            text-align: center;">
+              Follow us on social media:
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="display: flex; justify-content: center; gap: 7px;">
+              <figure>
+                <img src="Assets/social-icons/facebook.svg" alt="Facebook" width="26" height="26" loading="lazy">
+              </figure>
+              <figure>
+                <img src="Assets/social-icons/twitter.svg" alt="twitter" width="26" height="26" loading="lazy">
+              </figure>
+              <figure>
+                <img src="Assets/social-icons/instagram.svg" alt="instagram" width="26" height="26" loading="lazy">
+              </figure>
+              <figure>
+                <img src="Assets/social-icons/youtube.svg" alt="youtube" width="26" height="26" loading="lazy">
+              </figure>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-size: 10px;
+            font-weight: 400;
+            line-height: 15px;
+            text-align: center;
+            margin-top: 20px;">
+              &copy; All rights reserved Terms and Conditions
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 21px;
+            padding: 19px 9px 0;">
+              *Terms and conditions apply. Offer valid for new accounts only. Please see our website for more details.
+            </p>
+          </td>
+        </tr>
+			</table>
+      <!--Footer-->
+		</div>
+	</body>
+</html>
